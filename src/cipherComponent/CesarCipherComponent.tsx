@@ -59,7 +59,7 @@ export function InputKey({ onChange, value }: InputKeyProps<AffineCipherKey>) {
   return (
     <div className="w-full flex">
       <div className="flex flex-col md:flex-row w-full gap-2">
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <Input
             label="A"
             placeholder="Entrer un nombre"
@@ -68,7 +68,7 @@ export function InputKey({ onChange, value }: InputKeyProps<AffineCipherKey>) {
             error={internalErrors.a || undefined}
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
           <Input
             label="B"
             placeholder="Entrer un nombre"

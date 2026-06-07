@@ -93,14 +93,14 @@ function App() {
             <h2 className="font-bold text-gray-800">
               {ciphers[selectedCipher].cipherLabel} Cipher
             </h2>
-            <p className="text-sm text-gray-400 mt-0.5">
+            <p className="text-sm text-wrap text-gray-400 mt-0.5">
               {ciphers[selectedCipher].description}
             </p>
           </div>
           <div className="px-8 py-8">{ciphers[selectedCipher].component}</div>
-          <div className="bg-indigo-400 mt-3 mx-8 px-4 py-4 rounded-lg space-y-2">
+          <div className="bg-indigo-400 mt-3 mx-8 px-2 sm:px-4 py-4 rounded-lg space-y-2">
             <h2 className="text-xl">Alphabet</h2>
-            <div className="grid grid-cols-10 gap-6">
+            <div className="grid grid-cols-4 gap-4  sm:grid-cols-10 sm:gap-6">
               {englishChars.split("").map((char, index) => (
                 <div className="bg-white w-12 h-10 text-black rounded-lg text-nowrap text-center flex flex-row justify-center items-center cursor-pointer hover:bg-gray-400 hover:text-white transition-all">
                   {char}-{index}
